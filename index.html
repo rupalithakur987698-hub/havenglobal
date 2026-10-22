@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HavenGlobal | Global Properties</title>
+
+<style>
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f6f5f0;
+    color: #202e29;
+}
+header {
+    background: #123b32;
+    color: white;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.logo { font-size: 27px; font-weight: bold; }
+.logo span { color: #d9bd83; }
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+}
+.hero {
+    padding: 85px 8%;
+    background: linear-gradient(90deg, #123b32, #31594c);
+    color: white;
+}
+.hero h1 { font-size: 44px; max-width: 650px; }
+.hero p { font-size: 18px; line-height: 1.7; }
+.button {
+    display: inline-block;
+    background: #d9bd83;
+    color: #17362d;
+    padding: 14px 23px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 12px;
+}
+section { padding: 45px 7%; }
+h2 { font-size: 30px; }
+.intro { line-height: 1.7; color: #53615b; }
+.properties {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+}
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px #00000012;
+}
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card-content { padding: 20px; }
+.card h3 { margin-top: 0; }
+.price { color: #23634f; font-size: 21px; font-weight: bold; }
+.note { font-size: 13px; color: #777; }
+.contact {
+    background: #e7e9df;
+    text-align: center;
+}
+footer {
+    background: #123b32;
+    color: white;
+    text-align: center;
+    padding: 24px;
+}
+@media(max-width:600px) {
+    .hero h1 { font-size: 34px; }
+    nav a { margin-left: 0; margin-right: 12px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Haven<span>Global</span></div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#properties">Properties</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <h1>Discover Your Place in the World</h1>
+    <p>Explore homes, apartments and luxury properties across the globe with HavenGlobal.</p>
+    <a class="button" href="#properties">Explore Properties</a>
+</div>
+
+<section>
+    <h2>Welcome to HavenGlobal</h2>
+    <p class="intro">
+        Your starting point for discovering international real estate.
+        Explore property information and contact us for help connecting
+        with property owners or authorized agents.
+    </p>
+</section>
+
+<section id="properties">
+    <h2>Featured Properties</h2>
+    <p class="intro">Sample listings for website design. These are not verified offers for sale.</p>
+
+    <div class="properties">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80" alt="Dubai skyline">
+            <div class="card-content">
+                <h3>Modern City Apartment</h3>
+                <p>📍 Dubai, UAE</p>
+                <p class="price">Price on request</p>
+                <p>Explore city living in a modern apartment.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="Luxury house">
+            <div class="card-content">
+                <h3>Luxury Family Home</h3>
+                <p>📍 United States</p>
+                <p class="price">Price on request</p>
+                <p>Discover spacious homes in attractive locations.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Contemporary property">
+            <div class="card-content">
+                <h3>Contemporary Villa</h3>
+                <p>📍 International</p>
+                <p class="price">Price on request</p>
+                <p>Find a property to match your needs.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Let's Find Your Property</h2>
+    <p>Interested in a property or want to make an enquiry?</p>
+    <p>Contact HavenGlobal to get started.</p>
+    <p>Our contact details will be added here.</p>
+</section>
+
+<footer>
+    <p>© 2026 HavenGlobal | Global Property Discovery</p>
+    <p>Sample listings are illustrative and subject to verification.</p>
+</footer>
+
+</body>
+</html>
